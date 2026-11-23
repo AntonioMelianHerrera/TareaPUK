@@ -1,28 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Mi primera función JS (En realidad no es la primera)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Funciones matemáticas | PUK</title>
 	</head>
 	<body>
-		<h1>Calcula el doble de un número</h1>
-		<input type="number" id="num" placeholder="Introduce un número" />
-		<button onclick="mostrarDoble()">Calcular</button>
-		<p id="resultado"></p>
-		<script src="script.js"></script>
-		<script>
-			function mostrarDoble() {
-				const n = document.getElementById("num").value;
-				const resultado = doble(Number(n));
-				document.getElementById("resultado").textContent = typeof resultado === "string"
-					? resultado
-					: "El doble es: " + resultado;
-				if (typeof resultado === "string") {
-					console.log(resultado);
-				} else {
-					console.log("El doble de " + n + " es:", resultado);
-				}
-			}
-		</script>
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
 	</body>
 </html>
