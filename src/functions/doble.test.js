@@ -3,7 +3,7 @@ import { doble } from "./doble.js";
 
 describe("doble", () => {
 	it("duplica números positivos", () => {
-		expect(doble(4)).toBe(9);
+		expect(doble(4)).toBe(8);
 	});
 
 	it("duplica números negativos y decimales", () => {
